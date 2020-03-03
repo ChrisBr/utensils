@@ -94,8 +94,7 @@ module Utensils
         end
 
         def find_lazy_loaded_image
-          @page.has_css?("img[data-original$='#{@image}']") || 
-            @page.has_css?("img[data-src$='#{@image}']")
+          @page.has_css?("img[data-src$='#{@image}']")
         end
 
         def find_dragonfly_image
